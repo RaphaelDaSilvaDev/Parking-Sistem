@@ -34,6 +34,6 @@
 
 <br>
 
-<div aling="center">
+<div align="center">
 Feito por Raphael da Silva 🚀
 </div>
