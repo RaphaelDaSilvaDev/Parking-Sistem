@@ -1,0 +1,206 @@
+/*---General---*/
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+:root {
+    --hue: 112;
+    --primary-color: hsl(var(--hue), 94%, 68%);
+    --secundary-color: hsl(var(--hue), 50%, 88%);
+
+    --text-dark-color: hsl(0, 0%, 16%);
+    --shadow-color: hsla(0, 0%, 16%, 0.15);
+
+    --background-color: hsl(0, 0%, 93%);
+
+    --primary-button-color: hsl(var(--hue), 94%, 58%);
+    --warning-color: hsl(357, 73%, 52%);
+    --warning-rover-color: hsl(357, 73%, 44%);
+
+    font-size: 62.5%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow: overlay;
+    background-color: var(--background-color);
+}
+
+.wrapper {
+    width: min(76.8rem, 100%);
+
+    margin-inline: auto;
+    padding-inline: 1.6rem;
+}
+
+#input .content,
+#table .content {
+    margin-top: 3.2rem;
+
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--secundary-color);
+}
+
+/*---Header---*/
+header .content {
+    padding-top: 6.4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .content svg path:nth-child(2n + 0) {
+    fill: var(--primary-button-color);
+}
+
+header .content svg path:nth-child(n + 3) {
+    fill: var(--background-color);
+    stroke: var(--background-color);
+}
+
+/*---Input---*/
+#input label:nth-child(n + 2) {
+    margin-top: 1.6rem;
+}
+
+#input input {
+    height: 3rem;
+
+    margin-top: 0.8rem;
+    border: none;
+    border-radius: 1.6rem;
+    padding-inline: 1.6rem;
+
+    background-color: var(--background-color);
+}
+
+#input button {
+    width: 17.3rem;
+    height: 4.5rem;
+
+    margin-top: 1.6rem;
+    border: none;
+    border-radius: 1.6rem;
+
+    align-self: center;
+
+    background-color: var(--primary-color);
+    font-size: 2rem;
+
+    transition: 150ms;
+}
+
+#input button:hover {
+    cursor: pointer;
+    background-color: var(--primary-button-color);
+}
+
+/*---Table---*/
+#table {
+    min-height: calc(100vh - 58rem);
+}
+
+#table h2 {
+    font-size: 1.6rem;
+}
+
+#table .content .car {
+    margin-top: 1.6rem;
+
+    border-radius: 1.6rem;
+
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+#table .content .car .name p:first-letter {
+    text-transform: uppercase;
+}
+
+#table .content .car button {
+    width: 3rem;
+    height: 3rem;
+
+    border: none;
+    border-radius: 3rem;
+
+    background-color: var(--warning-color);
+    color: var(--background-color);
+
+    transition: 150ms;
+}
+
+#table .content .car button:hover {
+    cursor: pointer;
+    background-color: var(--warning-rover-color);
+}
+
+#table .content .car .vertical-line {
+    display: inline-block;
+    border-left: 1px solid var(--shadow-color);
+    margin: 0 10px;
+    height: 4rem;
+}
+
+/*---Footer---*/
+footer {
+    width: 100%;
+
+    margin-top: 3.2rem;
+    padding-block: 3.2rem;
+
+    border-radius: 1.6rem 1.6rem 0 0;
+
+    background-color: var(--primary-color);
+}
+
+footer .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .content div {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+}
+
+footer .content div p {
+    font-size: 1.4rem;
+}
+
+footer .content svg path:nth-child(n + 3) {
+    stroke: var(--primary-color);
+    fill: var(--primary-color);
+}
