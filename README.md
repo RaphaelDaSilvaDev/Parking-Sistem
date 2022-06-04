@@ -1,6 +1,7 @@
 # 🅿️ Parking Area
 
-<div aling="center">
+<div align="center">
+  
 ![Desktop](https://user-images.githubusercontent.com/66075182/172023736-a65f14f8-00ae-4fe0-bea6-944d259b3497.png)
 
 ## Projeto criado com Html Css e TypeScript
